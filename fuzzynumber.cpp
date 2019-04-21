@@ -36,8 +36,8 @@ void FuzzyNumber::division(){
 }
 
 void FuzzyNumber::redivision(fuzzyNumber b){
-    double resulte1=(1/(b.x+b.e1));
+    double resulte1=1/(b.x+b.e1);
     double resultx=1/b.x;
-    double resulte2=((1/(b.x-b.e1));
+    double resulte2=1/(b.x-b.e1);
     std::cout<<"1/В=("<<resulte1<<", "<<resultx<<", "<<resulte2<<")."<<std::endl;
 }

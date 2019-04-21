@@ -1,7 +1,45 @@
 #include "complex.h"
 #include "pair.h"
-Complex::Complex(){}
-void Complex::addition(){std::cout<<1;}
-void Complex::subtraction(){std::cout<<1;}
-void Complex::multiply(){std::cout<<1;}
-void Complex::division(){std::cout<<1;}
+Complex::Complex(){
+    Complex one, two;
+
+    std::cin>>one.a; this->one.a=one.a;
+    std::cin>>one.b; this->one.b=one.b;
+    std::cin>>two.a; this->two.a=one.a;
+    std::cin>>two.b; this->two.b=one.b;
+}
+
+void Complex::addition(){
+    double resultab=one.a+two.a;
+    double resultcd=one.b+two.b;
+    std::cout<<"А+В=("<<resultab<<", "<<resultcd<<")."<<std::endl;
+}
+
+void Complex::subtraction(){
+    double resultab=one.a-two.a;
+    double resultcd=one.b-two.b;
+    std::cout<<"А-В=("<<resultab<<", "<<resultcd<<")."<<std::endl;
+}
+
+void Complex::multiply(){
+    double resultab=one.a*two.a-one.b*two.b;
+    double resultcd=one.a*two.b+one.b*two.a;
+    std::cout<<"А*В=("<<resultab<<", "<<resultcd<<")."<<std::endl;
+}
+
+void Complex::division(){
+    double resultab=(one.a*two.a+one.b*two.b)/(two.a*two.a+two.b*two.b);
+    double resultcd=(one.a*two.b-one.b*two.a)/(two.a*two.a+two.b*two.b);
+    std::cout<<"А/В=("<<resultab<<", "<<resultcd<<")."<<std::endl;
+}
+/*
+· сопряженное число: conj(a,b) = (a, - b)
+*/
+void Complex::diff(){
+    if((one.a==two.a)&&(one.b==two.b))
+        std::cout<<"А=В."<<std::endl;
+}
+
+void Complex::conjugate(Complex one){
+    std::cout<<"conj(a,b)=("<<one.a<<", "<<-one.b<<")."<<std::endl;
+}
