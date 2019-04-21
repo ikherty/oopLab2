@@ -21,10 +21,11 @@ class FuzzyNumber: public pair{
     fuzzyNumber a, b;
 public:
     FuzzyNumber();
-    void additional() /*override*/;
+    void addition();
     void subtraction();
     void multiply();
     void division();
+    void redivision(fuzzyNumber b);
 };
 
 #endif // FUZZYNUMBER_H

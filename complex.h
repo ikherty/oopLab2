@@ -21,7 +21,7 @@ class Complex: public pair{
     complex one, two;
 public:
     Complex();
-    void additional();
+    void addition();
     void subtraction();
     void multiply();
     void division();

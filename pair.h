@@ -6,9 +6,7 @@
 #include <clocale>
 
 class pair{
-    int a,b;
 public:
-    pair();
     virtual void addition()=0;
     virtual void subtraction()=0;
     virtual void multiply()=0;
