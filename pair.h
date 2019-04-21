@@ -4,14 +4,15 @@
 #include <cmath>
 #include <cstring>
 #include <clocale>
-using namespace std;
 
-class pair
-{
+class pair{
+    int a,b;
 public:
     pair();
-    virtual void addition();
-
+    virtual void addition()=0;
+    virtual void subtraction()=0;
+    virtual void multiply()=0;
+    virtual void division()=0;
 };
 
 #endif // PAIR_H
