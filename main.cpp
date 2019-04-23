@@ -26,6 +26,9 @@ b – мнимая часть. Реализовать класс для рабо
 · сопряженное число: conj(a,b) = (a, - b)
 -------------*/
 #include "pair.h"
+#include "complex.h"
+#include "fuzzynumber.h"
+using namespace std;
 
 int main(int argc, char *argv[]){
     setlocale(LC_ALL,"rus");

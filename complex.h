@@ -3,18 +3,17 @@
 #include "pair.h"
 
 struct complex{
-    int a;
-    double b;
+    double a, b;
 };
 
 class Complex: public pair{
     complex one, two;
 public:
     Complex();
-    void addition();
-    void subtraction();
-    void multiply();
-    void division();
+    void addition()override;
+    void subtraction()override;
+    void multiply()override;
+    void division()override;
     void diff();
     void conjugate(Complex one);
 };

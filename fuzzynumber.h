@@ -10,10 +10,10 @@ class FuzzyNumber: public pair{
     fuzzyNumber a, b;
 public:
     FuzzyNumber();
-    void addition();
-    void subtraction();
-    void multiply();
-    void division();
+    void addition()override;
+    void subtraction()override;
+    void multiply()override;
+    void division()override;
     void redivision(fuzzyNumber b);
 };
 
