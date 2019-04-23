@@ -15,7 +15,7 @@ public:
     void multiply()override;
     void division()override;
     void diff();
-    void conjugate(Complex one);
+    void conjugate(complex one);
 };
 
 #endif // COMPLEX_H

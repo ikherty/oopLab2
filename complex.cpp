@@ -2,7 +2,7 @@
 #include "pair.h"
 
 Complex::Complex(){
-    Complex one, two;
+    complex one, two;
     std::cin>>one.a; this->one.a=one.a;
     std::cin>>one.b; this->one.b=one.b;
     std::cin>>two.a; this->two.a=one.a;
@@ -38,6 +38,6 @@ void Complex::diff(){
         std::cout<<"А=В."<<std::endl;
 }
 
-void Complex::conjugate(Complex one){
+void Complex::conjugate(complex one){
     std::cout<<"conj(a,b)=("<<one.a<<", "<<-one.b<<")."<<std::endl;
 }
